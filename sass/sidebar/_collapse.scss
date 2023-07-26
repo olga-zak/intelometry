@@ -1,0 +1,57 @@
+.collapse {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1.4rem;
+  color: getColor("sidebarText");
+  gap: 0.7rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 1.5rem;
+  width: 1.5rem;
+  height: 0.95rem;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .slider:before {
+      transform: translateX(0.55rem);
+    }
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid getColor("mainPlaceholderText");
+  background-color: transparent;
+  transition: 0.4s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 0.7rem;
+    width: 0.7rem;
+    left: 1px;
+    bottom: 1px;
+    background-color: getColor("mainPlaceholderText");
+    transition: 0.4s;
+  }
+
+  &.round {
+    border-radius: 2rem;
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}

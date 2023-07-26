@@ -19,30 +19,75 @@ a {
 
 img {
   display: block;
+  width: 100%;
 }
 
-aside {
-  height: 100vh;
-  background-image: linear-gradient(to left top, #111f2b, #132330, #162736, #182b3b, #1b2f41);
+.container {
+  display: grid;
+  grid-template-columns: 175px auto;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.material-symbols-outlined {
   font-size: 1rem;
 }
 
-/* The switch - the box around the slider */
+aside nav {
+  margin-bottom: 13.5rem;
+}
+aside ul {
+  display: grid;
+  gap: 0.6rem;
+}
+aside li {
+  display: flex;
+}
+
+.notifications {
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+.notifications::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 4px;
+  left: 25px;
+  background-color: #1cc078;
+}
+.notifications:hover, .notifications:focus {
+  margin-left: 0.5rem !important;
+}
+
+.collapse {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1.4rem;
+  color: #ffffff;
+  gap: 0.7rem;
+}
+
 .switch {
   position: relative;
   display: inline-block;
+  margin-left: auto;
+  margin-right: 1.5rem;
   width: 1.5rem;
   height: 0.95rem;
 }
-
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
+.switch input:checked + .slider:before {
+  transform: translateX(0.55rem);
+}
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -54,8 +99,7 @@ aside {
   background-color: transparent;
   transition: 0.4s;
 }
-
-.slider:before {
+.slider::before {
   position: absolute;
   content: "";
   height: 0.7rem;
@@ -65,16 +109,86 @@ aside {
   background-color: #c0c3c8;
   transition: 0.4s;
 }
-
-input:checked + .slider:before {
-  transform: translateX(0.55rem);
-}
-
-/* Rounded sliders */
 .slider.round {
   border-radius: 2rem;
 }
-
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #203242;
+  color: #ffffff;
+}
+.user .expand {
+  margin: 0;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: #045e34;
+}
+
+.name {
+  font-size: 0.8rem;
+}
+
+.role {
+  font-size: 0.6rem;
+}
+
+aside {
+  padding-top: 1.13rem;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  background-image: linear-gradient(to left top, #111f2b, #132330, #162736, #182b3b, #1b2f41);
+}
+aside img {
+  margin: 0 auto 1.75rem auto;
+  width: 8.75rem;
+}
+aside a {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 0.7rem;
+  height: 2rem;
+  color: #ffffff;
+  transition: all 300ms ease;
+}
+aside a:hover:not(.expand), aside a:focus:not(.expand) {
+  margin-left: 1.5rem;
+}
+
+.expand {
+  margin-left: auto;
+  margin-right: 1.5rem;
+  transition: all 300ms ease;
+}
+.expand:hover, .expand:focus {
+  color: #1cc078;
+}
+
+.active {
+  background-color: #1a3b43;
+}
+.active::before {
+  content: "";
+  width: 2px;
+  background-color: #1cc078;
+}
+.active a:not(.expand) {
+  margin-left: calc(1rem - 2px);
 }/*# sourceMappingURL=main.css.map */

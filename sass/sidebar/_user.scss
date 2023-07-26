@@ -1,0 +1,32 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: getColor("sidebarUserBG");
+  color: getColor("sidebarText");
+
+  .expand {
+    margin: 0;
+  }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: getColor("sidebarUserAvatar");
+}
+
+.name {
+  font-size: 0.8rem;
+}
+.role {
+  font-size: 0.6rem;
+}

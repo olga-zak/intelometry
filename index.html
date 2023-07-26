@@ -24,88 +24,96 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <aside>
-      <img
-        src="./images/logo-dark.svg"
-        alt="Intelometry logo dark"
-        width="140"
-      />
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> home </span>
-              <p>Home</p></a
-            >
-          </li>
+    <div class="container">
+      <aside>
+        <img src="./images/logo-light.svg" alt="Intelometry logo dark" />
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined"> home </span>
+                <p>Home</p></a
+              >
+            </li>
 
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> monitoring </span>
-              <p>Quotes</p></a
-            >
-          </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined"> monitoring </span>
+                <p>Quotes</p></a
+              >
+            </li>
 
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> speed </span>
-              <p>Meters</p></a
-            ><a href="#"
-              ><span class="material-symbols-outlined"> expand_more </span></a
-            >
-          </li>
+            <li class="active">
+              <a href="#">
+                <span class="material-symbols-outlined"> speed </span>
+                <p>Meters</p></a
+              ><a href="#" class="expand"
+                ><span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
 
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> task </span>
-              <p>Contracts</p></a
-            ><a href="#"
-              ><span class="material-symbols-outlined"> expand_more </span></a
-            >
-          </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined"> task </span>
+                <p>Contracts</p></a
+              ><a href="#" class="expand"
+                ><span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
 
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> analytics </span>
-              <p>Analysis</p></a
-            ><a href="#"
-              ><span class="material-symbols-outlined"> expand_more </span></a
-            >
-          </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined"> analytics </span>
+                <p>Analysis</p></a
+              ><a href="#" class="expand"
+                ><span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
 
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> description </span>
-              <p>Reports</p></a
-            ><a href="#"
-              ><span class="material-symbols-outlined"> expand_more </span></a
-            >
-          </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined"> description </span>
+                <p>Reports</p></a
+              ><a href="#" class="expand"
+                ><span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
 
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined">
-                admin_panel_settings
-              </span>
-              <p>Admin</p></a
-            ><a href="#"
-              ><span class="material-symbols-outlined"> expand_more </span></a
-            >
-          </li>
-        </ul>
-      </nav>
-      <a href="#"
-        ><span class="material-symbols-outlined"> notifications </span>
-        <p>Notifications</p></a
-      >
-      <div class="collapse">
-        <span class="material-symbols-outlined"> left_panel_close </span>
-        <p>Collapse</p>
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-      </div>
-    </aside>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  admin_panel_settings
+                </span>
+                <p>Admin</p></a
+              ><a href="#" class="expand"
+                ><span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="notifications"
+          ><span class="material-symbols-outlined"> notifications </span>
+          <p>Notifications</p></a
+        >
+        <div class="collapse">
+          <span class="material-symbols-outlined"> left_panel_close </span>
+          <p>Collapse</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="user">
+          <div class="avatar">JD</div>
+          <div>
+            <p class="name">John Doe</p>
+            <p class="role">Tenant</p>
+          </div>
+          <a href="#" class="expand"
+            ><span class="material-symbols-outlined"> expand_more </span></a
+          >
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
