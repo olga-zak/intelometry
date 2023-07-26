@@ -1,0 +1,22 @@
+$colors: (
+  "sidebarDark": #111f2b,
+  "sidebarLight": #1b2f41,
+  "sidebarText": #ffffff,
+  "sidebarAccent": #1cc078,
+  "sidebarUserBG": #203242,
+  "sidebarUserAvatar": #045e34,
+  "mainBG": #eceff8,
+  "mainText": #000000,
+  "mainPlaceholderText": #c0c3c8,
+  "tableMainBG": #ffffff,
+  "tableSecondaryBG": #f5f7fa,
+  "statusProcessing": #4985d6,
+  "statusCompleted": #18c177,
+  "statusDeclined": #ff5f5e,
+  "searchBtnBG": #1cc279,
+  "footerSecondary": #d4d8e1,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
