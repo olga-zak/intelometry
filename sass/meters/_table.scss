@@ -1,0 +1,31 @@
+@import "../utils/mixins";
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: getColor("tableMainBG");
+  font-size: 0.7rem;
+}
+
+tr {
+  border-bottom: 2px solid getColor("tableSecondaryBG");
+}
+thead {
+  background-color: getColor("tableSecondaryBG");
+}
+
+th {
+  padding: 0.8rem 1.6rem;
+  text-align: left;
+}
+td {
+  padding: 0.9rem 1.6rem;
+  white-space: nowrap;
+
+  span {
+    @include status(
+      getColor("statusProcessingBG"),
+      getColor("statusProcessing")
+    );
+  }
+}

@@ -1,0 +1,23 @@
+.pagination {
+  padding: 1.75rem;
+  background-color: getColor("tableMainBG");
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-right: 0.5rem;
+      width: 1.63rem;
+      height: 1.63rem;
+      padding: 0.2rem;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+
+      outline: 1px solid red;
+    }
+  }
+}

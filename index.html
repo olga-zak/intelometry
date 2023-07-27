@@ -122,18 +122,28 @@
                 ><span class="material-symbols-outlined"> home </span></a
               >
             </li>
+            <li>
+              <span class="material-symbols-outlined navigate-next">
+                navigate_next
+              </span>
+            </li>
             <li><a href="#">Meters</a></li>
+            <li>
+              <span class="material-symbols-outlined navigate-next">
+                navigate_next
+              </span>
+            </li>
             <li><a href="#">Meter List</a></li>
           </ul>
           <h1>Meter List</h1>
           <ul class="filter-menu">
             <li>
               <div class="dropdown">
-                <p>
+                <a href="#">
                   Account NY Meter 1<span class="material-symbols-outlined">
                     expand_more
                   </span>
-                </p>
+                </a>
                 <div class="dropdown-content">
                   <ul>
                     <li>Account NY Meter 1</li>
@@ -144,14 +154,16 @@
                 </div>
               </div>
             </li>
-            <li><input type="text" placeholder="Facility Name" /></li>
+            <li>
+              <input type="text" placeholder="Facility Name" />
+            </li>
             <li>
               <div class="dropdown">
-                <p>
+                <a href="#">
                   AECO<span class="material-symbols-outlined">
                     expand_more
                   </span>
-                </p>
+                </a>
                 <div class="dropdown-content">
                   <ul>
                     <li>AECO</li>
@@ -163,122 +175,125 @@
               </div>
             </li>
             <li>
-              <ul>
-                <li>
-                  <button>Search</button>
-                </li>
-                <li>
-                  <button>
-                    <span class="material-symbols-outlined"> filter_list </span
-                    >More filters
-                  </button>
-                </li>
-              </ul>
+              <div class="filter-btns">
+                <button>Search</button>
+                <button>
+                  <span class="material-symbols-outlined"> filter_list </span
+                  >More filters
+                </button>
+              </div>
             </li>
           </ul>
-          <div class="table-navigation">
-            <div>
-              <input type="text" class="search-field" placeholder="Search" />
-              <button>
-                <span class="material-symbols-outlined"> download </span>Export
-              </button>
+          <div class="table-wrapper">
+            <div class="table-navigation">
+              <div>
+                <input type="text" placeholder="Search" />
+                <button>
+                  <span class="material-symbols-outlined"> download </span
+                  >Export
+                </button>
+              </div>
+              <p>
+                Showing
+                <button>
+                  6
+                  <span class="material-symbols-outlined">
+                    expand_more
+                  </span></button
+                >of 54 results
+              </p>
             </div>
-            <p>
-              Showing 6
-              <span class="material-symbols-outlined"> expand_more </span>of 54
-              results
-            </p>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th><input type="checkbox" /></th>
-                <th><span class="material-symbols-outlined"> tag </span></th>
-                <th>Name</th>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Date</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-cell="checkbox"><input type="checkbox" /></td>
-                <td data-cell="hashtag">1</td>
-                <td data-cell="name">Svetlana</td>
-                <td data-cell="product">iMac</td>
-                <td data-cell="price">$1599</td>
-                <td data-cell="date">05.02.2023</td>
-                <td data-cell="status">Processing</td>
-              </tr>
+            <table>
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th><span class="material-symbols-outlined"> tag </span></th>
+                  <th>Name</th>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-cell="checkbox"><input type="checkbox" /></td>
+                  <td data-cell="hashtag">1</td>
+                  <td data-cell="name">Svetlana</td>
+                  <td data-cell="product">iMac</td>
+                  <td data-cell="price">$1599</td>
+                  <td data-cell="date">05.02.2023</td>
+                  <td data-cell="status"><span>Processing</span></td>
+                </tr>
 
-              <tr>
-                <td data-cell="checkbox"><input type="checkbox" /></td>
-                <td data-cell="hashtag">2</td>
-                <td data-cell="name">Daniel</td>
-                <td data-cell="product">iPhone 14 Pro</td>
-                <td data-cell="price">$1399</td>
-                <td data-cell="date">23.01.2023</td>
-                <td data-cell="status">Completed</td>
-              </tr>
+                <tr>
+                  <td data-cell="checkbox"><input type="checkbox" /></td>
+                  <td data-cell="hashtag">2</td>
+                  <td data-cell="name">Daniel</td>
+                  <td data-cell="product">iPhone 14 Pro</td>
+                  <td data-cell="price">$1399</td>
+                  <td data-cell="date">23.01.2023</td>
+                  <td data-cell="status">Completed</td>
+                </tr>
 
-              <tr>
-                <td data-cell="checkbox"><input type="checkbox" /></td>
-                <td data-cell="hashtag">3</td>
-                <td data-cell="name">Max</td>
-                <td data-cell="product">Big Golden Carrot</td>
-                <td data-cell="price">$99</td>
-                <td data-cell="date">13.01.2023</td>
-                <td data-cell="status">Declined</td>
-              </tr>
+                <tr>
+                  <td data-cell="checkbox"><input type="checkbox" /></td>
+                  <td data-cell="hashtag">3</td>
+                  <td data-cell="name">Max</td>
+                  <td data-cell="product">Big Golden Carrot</td>
+                  <td data-cell="price">$99</td>
+                  <td data-cell="date">13.01.2023</td>
+                  <td data-cell="status">Declined</td>
+                </tr>
 
-              <tr>
-                <td data-cell="checkbox"><input type="checkbox" /></td>
-                <td data-cell="hashtag">1</td>
-                <td data-cell="name">Svetlana</td>
-                <td data-cell="product">iMac</td>
-                <td data-cell="price">$1599</td>
-                <td data-cell="date">05.02.2023</td>
-                <td data-cell="status">Processing</td>
-              </tr>
+                <tr>
+                  <td data-cell="checkbox"><input type="checkbox" /></td>
+                  <td data-cell="hashtag">1</td>
+                  <td data-cell="name">Svetlana</td>
+                  <td data-cell="product">iMac</td>
+                  <td data-cell="price">$1599</td>
+                  <td data-cell="date">05.02.2023</td>
+                  <td data-cell="status">Processing</td>
+                </tr>
 
-              <tr>
-                <td data-cell="checkbox"><input type="checkbox" /></td>
-                <td data-cell="hashtag">2</td>
-                <td data-cell="name">Daniel</td>
-                <td data-cell="product">iPhone 14 Pro</td>
-                <td data-cell="price">$1399</td>
-                <td data-cell="date">23.01.2023</td>
-                <td data-cell="status">Completed</td>
-              </tr>
+                <tr>
+                  <td data-cell="checkbox"><input type="checkbox" /></td>
+                  <td data-cell="hashtag">2</td>
+                  <td data-cell="name">Daniel</td>
+                  <td data-cell="product">iPhone 14 Pro</td>
+                  <td data-cell="price">$1399</td>
+                  <td data-cell="date">23.01.2023</td>
+                  <td data-cell="status">Completed</td>
+                </tr>
 
-              <tr>
-                <td data-cell="checkbox"><input type="checkbox" /></td>
-                <td data-cell="hashtag">3</td>
-                <td data-cell="name">Max</td>
-                <td data-cell="product">Big Golden Carrot</td>
-                <td data-cell="price">$99</td>
-                <td data-cell="date">13.01.2023</td>
-                <td data-cell="status">Declined</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="pagination">
-            <ul>
-              <li>
-                <span class="material-symbols-outlined"> arrow_back </span>
-              </li>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>...</li>
-              <li>7</li>
-              <li>8</li>
-              <li>9</li>
-              <li>
-                <span class="material-symbols-outlined"> arrow_forward </span>
-              </li>
-            </ul>
+                <tr>
+                  <td data-cell="checkbox"><input type="checkbox" /></td>
+                  <td data-cell="hashtag">3</td>
+                  <td data-cell="name">Max</td>
+                  <td data-cell="product">Big Golden Carrot</td>
+                  <td data-cell="price">$99</td>
+                  <td data-cell="date">13.01.2023</td>
+                  <td data-cell="status">Declined</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined"> arrow_back </span>
+                </li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>...</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </main>
         <footer>footer</footer>
