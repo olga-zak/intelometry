@@ -1,3 +1,32 @@
+@import "../utils/mixins";
+
 footer {
   height: 3.75rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @include flex();
+  justify-content: space-between;
+  font-size: 0.56rem;
+
+  img {
+    max-width: 8.75rem;
+  }
+
+  div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: getColor("mainText");
+
+    &:first-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  p + p {
+    margin-top: 0.5rem;
+    color: #{rgba(getColor("mainText"), 0.3)};
+  }
 }

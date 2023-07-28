@@ -59,7 +59,7 @@ aside {
 }
 aside img {
   margin: 0 auto 1.75rem auto;
-  width: 8.75rem;
+  max-width: 8.75rem;
 }
 aside a {
   display: flex;
@@ -417,6 +417,10 @@ thead {
   background-color: #f5f7fa;
 }
 
+tbody tr:hover {
+  background-color: #f5f7fa;
+}
+
 th {
   padding: 0.8rem 1.6rem;
   text-align: left;
@@ -521,4 +525,27 @@ td .status-declined::before {
 
 footer {
   height: 3.75rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.56rem;
+}
+footer img {
+  max-width: 8.75rem;
+}
+footer div:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  color: #000000;
+}
+footer a:first-child {
+  margin-bottom: 0.5rem;
+}
+footer p + p {
+  margin-top: 0.5rem;
+  color: rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=main.css.map */
