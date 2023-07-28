@@ -1,8 +1,7 @@
 @import "../utils/mixins";
 
 .filter-menu {
-  display: flex;
-  align-items: center;
+  @include flex();
   justify-content: space-between;
   margin-bottom: 1.19rem;
   padding: 0.56rem;
@@ -19,9 +18,8 @@
   }
 
   a {
-    display: flex;
+    @include flex();
     justify-content: space-around;
-    align-items: center;
     font-size: 0.7rem;
     color: getColor("mainPlaceholderText");
   }
@@ -44,8 +42,7 @@
 }
 
 .filter-btns {
-  display: flex;
-  align-items: center;
+  @include flex();
 
   button {
     @include button(getColor("searchBtnBG"));
@@ -54,8 +51,7 @@
 
   button + button {
     @include button(getColor("mainText"));
-    display: flex;
-    align-items: center;
+    @include flex();
 
     span {
       margin-right: 10px;

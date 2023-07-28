@@ -7,17 +7,33 @@
   ul {
     display: flex;
     justify-content: center;
+    font-size: 0.7rem;
 
     li {
       margin-right: 0.5rem;
-      width: 1.63rem;
-      height: 1.63rem;
+      width: 1.4rem;
+      height: 1.4rem;
       padding: 0.2rem;
+      border: none;
       display: inline-block;
       text-align: center;
       cursor: pointer;
+      transition: all 300ms ease;
 
-      outline: 1px solid red;
+      &:first-child {
+        color: getColor("mainPlaceholderText");
+      }
+
+      &:hover,
+      &:focus {
+        color: getColor("statusCompleted");
+      }
     }
   }
+}
+
+.page-active {
+  border-radius: 5px;
+  color: getColor("statusCompleted");
+  background-color: #{rgba(getColor("statusCompleted"), 0.2)};
 }

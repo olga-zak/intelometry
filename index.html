@@ -26,92 +26,106 @@
   <body>
     <div class="container">
       <aside>
-        <img src="./images/logo-light.svg" alt="Intelometry logo dark" />
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <span class="material-symbols-outlined"> home </span>
-                <p>Home</p></a
-              >
-            </li>
+        <div>
+          <img src="./images/logo-light.svg" alt="Intelometry logo dark" />
+          <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> home </span>
+                  <p>Home</p></a
+                >
+              </li>
 
-            <li>
-              <a href="#">
-                <span class="material-symbols-outlined"> monitoring </span>
-                <p>Quotes</p></a
-              >
-            </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> monitoring </span>
+                  <p>Quotes</p></a
+                >
+              </li>
 
-            <li class="active">
-              <a href="#">
-                <span class="material-symbols-outlined"> speed </span>
-                <p>Meters</p></a
-              ><a href="#" class="expand"
-                ><span class="material-symbols-outlined"> expand_more </span></a
-              >
-            </li>
+              <li class="active">
+                <a href="#">
+                  <span class="material-symbols-outlined"> speed </span>
+                  <p>Meters</p></a
+                ><a href="#" class="expand"
+                  ><span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+              </li>
 
-            <li>
-              <a href="#">
-                <span class="material-symbols-outlined"> task </span>
-                <p>Contracts</p></a
-              ><a href="#" class="expand"
-                ><span class="material-symbols-outlined"> expand_more </span></a
-              >
-            </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> task </span>
+                  <p>Contracts</p></a
+                ><a href="#" class="expand"
+                  ><span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+              </li>
 
-            <li>
-              <a href="#">
-                <span class="material-symbols-outlined"> analytics </span>
-                <p>Analysis</p></a
-              ><a href="#" class="expand"
-                ><span class="material-symbols-outlined"> expand_more </span></a
-              >
-            </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> analytics </span>
+                  <p>Analysis</p></a
+                ><a href="#" class="expand"
+                  ><span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+              </li>
 
-            <li>
-              <a href="#">
-                <span class="material-symbols-outlined"> description </span>
-                <p>Reports</p></a
-              ><a href="#" class="expand"
-                ><span class="material-symbols-outlined"> expand_more </span></a
-              >
-            </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> description </span>
+                  <p>Reports</p></a
+                ><a href="#" class="expand"
+                  ><span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+              </li>
 
-            <li>
-              <a href="#">
-                <span class="material-symbols-outlined">
-                  admin_panel_settings
-                </span>
-                <p>Admin</p></a
-              ><a href="#" class="expand"
-                ><span class="material-symbols-outlined"> expand_more </span></a
-              >
-            </li>
-          </ul>
-        </nav>
-        <a href="#" class="notifications"
-          ><span class="material-symbols-outlined"> notifications </span>
-          <p>Notifications</p></a
-        >
-        <div class="collapse">
-          <span class="material-symbols-outlined"> left_panel_close </span>
-          <p>Collapse</p>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    admin_panel_settings
+                  </span>
+                  <p>Admin</p></a
+                ><a href="#" class="expand"
+                  ><span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="user">
-          <div class="avatar">JD</div>
-          <div>
-            <p class="name">John Doe</p>
-            <p class="role">Tenant</p>
-          </div>
-          <a href="#" class="expand"
-            ><span class="material-symbols-outlined"> expand_more </span></a
+        <div>
+          <a href="#" class="notifications"
+            ><span class="material-symbols-outlined"> notifications </span>
+            <p>Notifications</p></a
           >
+          <div class="collapse">
+            <span class="material-symbols-outlined"> left_panel_close </span>
+            <p>Collapse</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="user">
+            <div class="avatar">JD</div>
+            <div>
+              <p class="name">John Doe</p>
+              <p class="role">Tenant</p>
+            </div>
+            <a href="#" class="expand"
+              ><span class="material-symbols-outlined"> expand_more </span></a
+            >
+          </div>
         </div>
       </aside>
       <div class="container-right">
@@ -223,7 +237,9 @@
                   <td data-cell="product">iMac</td>
                   <td data-cell="price">$1599</td>
                   <td data-cell="date">05.02.2023</td>
-                  <td data-cell="status"><span>Processing</span></td>
+                  <td data-cell="status">
+                    <span class="status-processing">Processing</span>
+                  </td>
                 </tr>
 
                 <tr>
@@ -233,7 +249,9 @@
                   <td data-cell="product">iPhone 14 Pro</td>
                   <td data-cell="price">$1399</td>
                   <td data-cell="date">23.01.2023</td>
-                  <td data-cell="status">Completed</td>
+                  <td data-cell="status">
+                    <span class="status-completed">Completed</span>
+                  </td>
                 </tr>
 
                 <tr>
@@ -243,7 +261,9 @@
                   <td data-cell="product">Big Golden Carrot</td>
                   <td data-cell="price">$99</td>
                   <td data-cell="date">13.01.2023</td>
-                  <td data-cell="status">Declined</td>
+                  <td data-cell="status">
+                    <span class="status-declined">Declined</span>
+                  </td>
                 </tr>
 
                 <tr>
@@ -253,7 +273,9 @@
                   <td data-cell="product">iMac</td>
                   <td data-cell="price">$1599</td>
                   <td data-cell="date">05.02.2023</td>
-                  <td data-cell="status">Processing</td>
+                  <td data-cell="status">
+                    <span class="status-processing">Processing</span>
+                  </td>
                 </tr>
 
                 <tr>
@@ -263,7 +285,9 @@
                   <td data-cell="product">iPhone 14 Pro</td>
                   <td data-cell="price">$1399</td>
                   <td data-cell="date">23.01.2023</td>
-                  <td data-cell="status">Completed</td>
+                  <td data-cell="status">
+                    <span class="status-completed">Completed</span>
+                  </td>
                 </tr>
 
                 <tr>
@@ -273,7 +297,9 @@
                   <td data-cell="product">Big Golden Carrot</td>
                   <td data-cell="price">$99</td>
                   <td data-cell="date">13.01.2023</td>
-                  <td data-cell="status">Declined</td>
+                  <td data-cell="status">
+                    <span class="status-declined">Declined</span>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -282,7 +308,7 @@
                 <li>
                   <span class="material-symbols-outlined"> arrow_back </span>
                 </li>
-                <li>1</li>
+                <li class="page-active">1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>...</li>

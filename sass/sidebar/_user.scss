@@ -1,7 +1,8 @@
+@import "../utils/mixins";
+
 .user {
-  display: flex;
+  @include flex();
   justify-content: space-between;
-  align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 6px;
@@ -15,8 +16,7 @@
 }
 
 .avatar {
-  display: flex;
-  align-items: center;
+  @include flex();
   justify-content: center;
   height: 1.75rem;
   width: 1.75rem;

@@ -1,8 +1,7 @@
 @import "../utils/mixins";
 
 .table-navigation {
-  display: flex;
-  align-items: center;
+  @include flex();
   justify-content: space-between;
   padding: 0.56rem;
   border-top-left-radius: 0.5rem;
@@ -10,8 +9,7 @@
   background-color: getColor("tableMainBG");
 
   div {
-    display: flex;
-    align-items: center;
+    @include flex();
   }
 
   input {
@@ -42,8 +40,7 @@
 
   button {
     @include button(getColor("tableSecondaryBG"));
-    display: flex;
-    align-items: center;
+    @include flex();
     color: getColor("mainPlaceholderText");
 
     span {
@@ -52,8 +49,7 @@
   }
 
   p {
-    display: flex;
-    align-items: center;
+    @include flex();
     font-size: 0.7rem;
 
     button {

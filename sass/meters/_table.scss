@@ -22,10 +22,22 @@ td {
   padding: 0.9rem 1.6rem;
   white-space: nowrap;
 
-  span {
+  .status-processing {
     @include status(
-      getColor("statusProcessingBG"),
+      #{rgba(getColor("statusProcessing"), 0.2)},
       getColor("statusProcessing")
+    );
+  }
+  .status-completed {
+    @include status(
+      #{rgba(getColor("statusCompleted"), 0.2)},
+      getColor("statusCompleted")
+    );
+  }
+  .status-declined {
+    @include status(
+      #{rgba(getColor("statusDeclined"), 0.2)},
+      getColor("statusDeclined")
     );
   }
 }
