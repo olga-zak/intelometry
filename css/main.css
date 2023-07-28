@@ -45,7 +45,6 @@ img {
 @media screen and (max-width: 1230px) {
   .container {
     grid-template-columns: 175px auto;
-    max-width: 1230px;
   }
 }
 aside {
@@ -95,6 +94,11 @@ aside a:hover:not(.expand), aside a:focus:not(.expand) {
   margin-left: calc(1rem - 2px);
 }
 
+@media screen and (max-width: 930px) {
+  aside img {
+    visibility: hidden;
+  }
+}
 aside ul {
   display: grid;
   gap: 0.6rem;

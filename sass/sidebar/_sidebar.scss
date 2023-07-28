@@ -60,3 +60,12 @@ aside {
     margin-left: calc(1rem - 2px);
   }
 }
+
+@media screen and (max-width: 930px) {
+  aside {
+    //width: dd;
+    img {
+      visibility: hidden;
+    }
+  }
+}
