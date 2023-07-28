@@ -10,7 +10,12 @@ table {
 tr {
   border-bottom: 2px solid getColor("tableSecondaryBG");
 }
+
 thead {
+  background-color: getColor("tableSecondaryBG");
+}
+
+tbody tr:hover {
   background-color: getColor("tableSecondaryBG");
 }
 
