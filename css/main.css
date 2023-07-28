@@ -304,7 +304,7 @@ h1 {
   transition: opacity 300ms ease;
   margin-right: 4px;
 }
-.filter-btns button:hover {
+.filter-btns button:hover, .filter-btns button:focus {
   opacity: 0.7;
 }
 .filter-btns button + button {
@@ -321,7 +321,7 @@ h1 {
   display: flex;
   align-items: center;
 }
-.filter-btns button + button:hover {
+.filter-btns button + button:hover, .filter-btns button + button:focus {
   opacity: 0.7;
 }
 .filter-btns button + button span {
@@ -382,7 +382,7 @@ h1 {
   align-items: center;
   color: #c0c3c8;
 }
-.table-navigation button:hover {
+.table-navigation button:hover, .table-navigation button:focus {
   opacity: 0.7;
 }
 .table-navigation button span {
@@ -417,7 +417,8 @@ thead {
   background-color: #f5f7fa;
 }
 
-tbody tr:hover {
+tbody tr:hover,
+tbody tr:focus {
   background-color: #f5f7fa;
 }
 

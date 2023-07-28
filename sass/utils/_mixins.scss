@@ -15,7 +15,8 @@
   background-color: $color;
   transition: opacity 300ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }

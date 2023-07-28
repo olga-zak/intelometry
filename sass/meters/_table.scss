@@ -15,7 +15,8 @@ thead {
   background-color: getColor("tableSecondaryBG");
 }
 
-tbody tr:hover {
+tbody tr:hover,
+tbody tr:focus {
   background-color: getColor("tableSecondaryBG");
 }
 
