@@ -1,12 +1,9 @@
-aside {
-  ul {
-    display: grid;
-    gap: 0.6rem;
-  }
-
+aside,
+.mobile-menu {
   li {
     display: flex;
     align-items: center;
+    margin-bottom: 0.6rem;
   }
   .material-symbols-outlined {
     color: var(--sidebarText);

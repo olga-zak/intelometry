@@ -3,10 +3,12 @@
 .user {
   @include flex();
   justify-content: space-between;
-  width: calc(100% - 2rem);
+  width: calc(100% - 1.4rem) !important;
+
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 6px;
+
   border-radius: 6px;
   background-color: getColor("sidebarUserBG");
   color: getColor("sidebarText");
@@ -37,13 +39,4 @@
 }
 .role {
   font-size: 0.6rem;
-}
-
-@media screen and (max-width: 930px) {
-  .user {
-    div + div,
-    span {
-      display: none;
-    }
-  }
 }
