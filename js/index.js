@@ -9,6 +9,6 @@ arrowButton.forEach((el) =>
 
 const burgerOpenBtn = document.querySelector(".checkbox");
 burgerOpenBtn.addEventListener("click", () => {
-  const mobMenu = document.querySelector(".mobile-menu");
-  mobMenu.classList.toggle("invisible");
+  const mobMenu = document.querySelector(".navigation");
+  mobMenu.classList.toggle("open");
 });
