@@ -7,38 +7,18 @@
   --accentGreen: #1cc078;
   --accentRed: #ff5f5e;
   --accentBlue: #4985d6;
+  --tableMainBG: #ffffff;
+  --tableSecondaryBG: #f5f7fa;
 }
-/////
-@function lightenMainClr($color, $percentage) {
-  @return lighten($color, $percentage);
-}
+
 $bgLight: #eceff8;
 $bgDark: #111f2b;
+$bgDarken: darken($bgDark, 1%);
 $text: #000000;
 $textLight: lighten($text, 65%);
 $accentGreen: #1cc078;
 $accentRed: #ff5f5e;
 $accentBlue: #4985d6;
-/////
-$colors: (
-  "sidebarDark": #111f2b,
-  "sidebarLight": #1b2f41,
-  "sidebarText": #ffffff,
-  "sidebarAccent": #1cc078,
-  "sidebarUserBG": #203242,
-  "sidebarUserAvatar": #045e34,
-  "mainBG": #eceff8,
-  "mainText": #000000,
-  "mainPlaceholderText": #c0c3c8,
-  "tableMainBG": #ffffff,
-  "tableSecondaryBG": #f5f7fa,
-  "statusProcessing": #4985d6,
-  "statusCompleted": #18c177,
-  "statusDeclined": #ff5f5e,
-  "searchBtnBG": #1cc279,
-  "footerSecondary": #d4d8e1,
-);
-
-@function getColor($key) {
-  @return map-get($colors, $key);
-}
+$statusProcessing: #4985d6;
+$statusCompleted: #18c177;
+$statusDeclined: #ff5f5e;

@@ -4,7 +4,7 @@
   @include flex();
   margin-left: 1rem;
   margin-bottom: 1.4rem;
-  color: getColor("sidebarText");
+  color: var(--sidebarText);
   gap: 0.7rem;
 }
 
@@ -34,7 +34,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid getColor("mainPlaceholderText");
+  border: 1px solid $textLight;
   background-color: transparent;
   transition: all 300ms ease;
 
@@ -45,7 +45,7 @@
     width: 0.7rem;
     left: 1px;
     bottom: 1px;
-    background-color: getColor("mainPlaceholderText");
+    background-color: $textLight;
     transition: all 300ms ease;
   }
 

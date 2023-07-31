@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin-bottom: 1.19rem;
   padding: 0.56rem;
-  background-color: getColor("tableMainBG");
+  background-color: var(--tableMainBG);
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
@@ -13,7 +13,7 @@
     width: 20%;
 
     &:not(:last-child) {
-      border-right: 1px solid getColor("mainPlaceholderText");
+      border-right: 1px solid $textLight;
     }
   }
 
@@ -21,7 +21,7 @@
     @include flex();
     justify-content: space-around;
     font-size: 0.7rem;
-    color: getColor("mainPlaceholderText");
+    color: $textLight;
   }
 
   input {
@@ -32,7 +32,7 @@
 
     &::placeholder {
       font-size: 0.7rem;
-      color: getColor("mainPlaceholderText");
+      color: $textLight;
     }
 
     &:focus {
@@ -45,12 +45,12 @@
   @include flex();
 
   button {
-    @include button(getColor("searchBtnBG"));
+    @include button(var(--accentGreen));
     margin-right: 4px;
   }
 
   button + button {
-    @include button(getColor("mainText"));
+    @include button(var(--text));
     @include flex();
 
     span {
@@ -76,4 +76,33 @@
       justify-content: space-between;
     }
   }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--tableMainBG);
+  width: 100%;
+  border: 1px solid $textLight;
+  border-radius: 6px;
+  z-index: 1;
+
+  li {
+    width: 100%;
+    padding: 10px;
+    &:not(:last-child) {
+      border-right: none;
+    }
+    &:hover {
+      background-color: var(--tableSecondaryBG);
+    }
+  }
+}
+.show {
+  display: block;
 }

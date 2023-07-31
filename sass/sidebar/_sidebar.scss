@@ -1,8 +1,7 @@
 @import "../utils/mixins";
 
 aside {
-  display: flex;
-  height: 100vh;
+  height: 100%;
   padding-top: 1.13rem;
   padding-bottom: 1.5rem;
   font-size: 1rem;
@@ -16,7 +15,7 @@ aside {
   );
 
   .navigation {
-    height: 100%;
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +34,7 @@ aside {
     padding: 0 1rem;
     gap: 0.7rem;
     height: 2rem;
-    color: getColor("sidebarText");
+    color: var(--sidebarText);
     transition: all 300ms ease;
 
     &:hover,
@@ -44,8 +43,7 @@ aside {
     }
 
     div {
-      display: flex;
-      align-items: center;
+      @include flex();
     }
   }
 }
@@ -53,9 +51,10 @@ aside {
 .active {
   background-color: #1a3b43;
 
-  &::before {
-    content: "";
-    width: 2px;
-    background-color: getColor("sidebarAccent");
-  }
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   width: 2px;
+  //   background-color: var(--accentGreen);
+  // }
 }

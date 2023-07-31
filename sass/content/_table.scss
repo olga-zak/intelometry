@@ -3,21 +3,18 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: getColor("tableMainBG");
+  background-color: var(--tableMainBG);
   font-size: 0.7rem;
 }
 
 tr {
-  border-bottom: 2px solid getColor("tableSecondaryBG");
+  border-bottom: 2px solid var(--tableSecondaryBG);
 }
 
-thead {
-  background-color: getColor("tableSecondaryBG");
-}
-
+thead,
 tbody tr:hover,
 tbody tr:focus {
-  background-color: getColor("tableSecondaryBG");
+  background-color: var(--tableSecondaryBG);
 }
 
 th {
@@ -29,22 +26,13 @@ td {
   white-space: nowrap;
 
   .status-processing {
-    @include status(
-      #{rgba(getColor("statusProcessing"), 0.2)},
-      getColor("statusProcessing")
-    );
+    @include status(#{rgba($statusProcessing, 0.2)}, $statusProcessing);
   }
   .status-completed {
-    @include status(
-      #{rgba(getColor("statusCompleted"), 0.2)},
-      getColor("statusCompleted")
-    );
+    @include status(#{rgba($statusCompleted, 0.2)}, $statusCompleted);
   }
   .status-declined {
-    @include status(
-      #{rgba(getColor("statusDeclined"), 0.2)},
-      getColor("statusDeclined")
-    );
+    @include status(#{rgba($statusDeclined, 0.2)}, $statusDeclined);
   }
 }
 

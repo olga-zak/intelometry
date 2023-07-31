@@ -6,7 +6,7 @@
   padding: 0.56rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  background-color: getColor("tableMainBG");
+  background-color: var(--tableMainBG);
 
   div {
     @include flex();
@@ -19,7 +19,7 @@
     padding: 0.56rem;
     padding-left: 2rem;
     border: none;
-    background-color: getColor("tableSecondaryBG");
+    background-color: var(--tableSecondaryBG);
     border-radius: 0.5rem;
     font-family: "Roboto", sans-serif;
     font-size: 0.7rem;
@@ -30,7 +30,7 @@
 
     &::placeholder {
       font-size: 0.7rem;
-      color: getColor("mainPlaceholderText");
+      color: $textLight;
     }
 
     &:focus {
@@ -39,9 +39,9 @@
   }
 
   button {
-    @include button(getColor("tableSecondaryBG"));
+    @include button(var(--tableSecondaryBG));
     @include flex();
-    color: getColor("mainPlaceholderText");
+    color: $textLight;
 
     span {
       margin-right: 10px;

@@ -4,15 +4,14 @@ main {
   width: 100%;
   height: 100%;
   padding: 2rem 2.25rem 3rem 2.25rem;
-  background-color: getColor("mainBG");
-}
-@media screen and (max-width: 768px) {
-  main {
+  background-color: var(--bgLight);
+
+  @media screen and (max-width: 768px) {
     padding: 1rem;
   }
 }
 
-.navigation-menu {
+.breadcrumbs {
   @include flex();
   margin-bottom: 1.65rem;
 
@@ -20,15 +19,15 @@ main {
     margin-right: 0.4rem;
   }
 
-  .navigate-next {
-    vertical-align: middle;
-  }
-
   a {
     display: table-cell;
     vertical-align: middle;
     font-size: 0.7rem;
-    color: getColor(mainText);
+    color: var(--text);
+  }
+
+  .navigate-next {
+    vertical-align: middle;
   }
 }
 
@@ -40,8 +39,4 @@ h1 {
 
 .table-wrapper {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.dropdown-content {
-  display: none;
 }

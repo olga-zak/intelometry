@@ -1,6 +1,6 @@
 .pagination {
   padding: 1.75rem;
-  background-color: getColor("tableMainBG");
+  background-color: var(--tableMainBG);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 
@@ -21,12 +21,12 @@
       transition: all 300ms ease;
 
       &:first-child {
-        color: getColor("mainPlaceholderText");
+        color: $textLight;
       }
 
       &:hover,
       &:focus {
-        color: getColor("statusCompleted");
+        color: var(--accentGreen);
       }
     }
   }
@@ -34,6 +34,6 @@
 
 .page-active {
   border-radius: 5px;
-  color: getColor("statusCompleted");
-  background-color: #{rgba(getColor("statusCompleted"), 0.2)};
+  color: var(--accentGreen);
+  background-color: #{rgba($accentGreen, 0.2)};
 }

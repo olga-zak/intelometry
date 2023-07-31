@@ -12,3 +12,13 @@ burgerOpenBtn.addEventListener("click", () => {
   const mobMenu = document.querySelector(".navigation");
   mobMenu.classList.toggle("open");
 });
+
+const dropdownMenuOpenBtn = document.querySelectorAll(".dropdown");
+dropdownMenuOpenBtn.forEach((el) => {
+  el.addEventListener("click", (event) => {
+    event.preventDefault();
+    const dropdownMenu =
+      event.target.parentElement.querySelector(".dropdown-content");
+    dropdownMenu.classList.toggle("show");
+  });
+});
