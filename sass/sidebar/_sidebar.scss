@@ -4,6 +4,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   padding-top: 1.13rem;
   padding-bottom: 1.5rem;
   font-size: 1rem;
@@ -23,27 +24,24 @@ aside {
 
   a {
     @include flex();
-    margin-left: 1rem;
+    //justify-content: space-between;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 1rem;
     gap: 0.7rem;
     height: 2rem;
     color: getColor("sidebarText");
     transition: all 300ms ease;
 
-    &:hover:not(.expand),
-    &:focus:not(.expand) {
-      margin-left: 1.5rem;
+    &:hover,
+    &:focus {
+      margin-left: 1rem;
     }
-  }
-}
 
-.expand {
-  margin-left: auto;
-  margin-right: 1.5rem;
-  transition: all 300ms ease;
-
-  &:hover,
-  &:focus {
-    color: getColor("sidebarAccent");
+    div {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -55,17 +53,13 @@ aside {
     width: 2px;
     background-color: getColor("sidebarAccent");
   }
-
-  & a:not(.expand) {
-    margin-left: calc(1rem - 2px);
-  }
 }
-
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 940px) {
   aside {
-    //width: dd;
-    img {
-      visibility: hidden;
+    width: 100%;
+    height: 4rem;
+    &:first-child {
+      display: flex;
     }
   }
 }

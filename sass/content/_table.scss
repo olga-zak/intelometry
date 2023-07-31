@@ -47,3 +47,39 @@ td {
     );
   }
 }
+
+@media screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 0.4rem 0.3rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+
+    &:nth-child(2) {
+      display: none;
+    }
+    &::before {
+      content: attr(data-cell) "  ";
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+
+  tbody tr {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 50% 50%;
+
+    &:nth-child(2n) {
+      background-color: lighten($textLight, 26%);
+    }
+  }
+}

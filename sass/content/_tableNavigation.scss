@@ -63,3 +63,16 @@
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  .table-navigation {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+
+    input {
+      width: 9rem;
+      margin-bottom: 0.2rem;
+    }
+  }
+}

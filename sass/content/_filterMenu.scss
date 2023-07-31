@@ -58,3 +58,22 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .filter-menu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    gap: 1rem;
+    li {
+      width: 80%;
+
+      &:not(:last-child) {
+        border: none;
+      }
+    }
+    a {
+      justify-content: space-between;
+    }
+  }
+}

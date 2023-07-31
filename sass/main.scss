@@ -1,8 +1,9 @@
 @import "./utils/colors";
 @import "./base/common";
-@import "./sidebar/index";
-@import "./meters/index";
-@import "./footer/footer";
+@import "./base/mainLayout";
 
-//   font-family: "Roboto", sans-serif;
-//   font-family: "Exo 2", sans-serif;
+@import "./sidebar/index";
+
+@import "./content/index";
+
+@import "./footer/footer";

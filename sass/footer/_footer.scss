@@ -1,32 +1,38 @@
 @import "../utils/mixins";
 
 footer {
-  height: 3.75rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
   @include flex();
   justify-content: space-between;
+  padding: 1rem 3rem;
+  border-top: 1px solid $textLight;
+  background-color: var(--bgLight);
   font-size: 0.56rem;
 
   img {
     max-width: 8.75rem;
   }
 
-  div:not(:last-child) {
+  div {
     display: flex;
     flex-direction: column;
   }
 
-  a {
-    color: getColor("mainText");
-
+  a,
+  p {
+    color: var(--text);
     &:first-child {
       margin-bottom: 0.5rem;
     }
   }
 
   p + p {
-    margin-top: 0.5rem;
-    color: #{rgba(getColor("mainText"), 0.3)};
+    color: $textLight;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 1.1rem;
   }
 }

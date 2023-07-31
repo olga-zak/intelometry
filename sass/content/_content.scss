@@ -2,9 +2,13 @@
 
 main {
   width: 100%;
-  //height: 91%;
-  padding: 1.7rem;
-  border-bottom: 2px solid getColor("footerSecondary");
+  padding: 2rem 2.25rem 3rem 2.25rem;
+  background-color: getColor("mainBG");
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
 }
 
 .navigation-menu {

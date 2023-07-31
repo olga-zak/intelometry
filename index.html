@@ -1,339 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meter List</title>
+    <title>Meter</title>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
     <!-- MATERIAL SYMBOLS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <div class="container">
-      <aside>
-        <div>
-          <img src="./images/logo-light.svg" alt="Intelometry logo light" />
-          <nav>
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined"> home </span>
-                  <p>Home</p></a
-                >
-              </li>
+</head>
 
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined"> monitoring </span>
-                  <p>Quotes</p></a
-                >
-              </li>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <aside>
+                <div>
+                    <img src="./images/logo-light.svg" alt="Intelometry logo light" />
+                    <nav>
+                        <ul>
+                            
+                            <li>            
+                                <a href="#"><span class="material-symbols-outlined"> home </span>
+                                Home</a>
+                            </li>
 
-              <li class="active">
-                <a href="#">
-                  <span class="material-symbols-outlined"> speed </span>
-                  <p>Meters</p></a
-                ><a href="#" class="expand"
-                  ><span class="material-symbols-outlined">
-                    expand_more
-                  </span></a
-                >
-              </li>
+                             <li>            
+                                <a href="#"><span class="material-symbols-outlined"> monitoring </span>
+                                Quotes</a>
+                            </li>
 
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined"> task </span>
-                  <p>Contracts</p></a
-                ><a href="#" class="expand"
-                  ><span class="material-symbols-outlined">
-                    expand_more
-                  </span></a
-                >
-              </li>
+                            <li class="parent active">
+                                
+                                <a href="#">
+                                    <span class="material-symbols-outlined"> speed </span>
+                                    Meters
+                                </a>
+                                <span   class="material-symbols-outlined menu-arrow"> expand_more </span>
+                               
+                                <ul class="sub-menu">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
 
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined"> analytics </span>
-                  <p>Analysis</p></a
-                ><a href="#" class="expand"
-                  ><span class="material-symbols-outlined">
-                    expand_more
-                  </span></a
-                >
-              </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <span class="material-symbols-outlined"> task </span>
+                                    Contracts
+                                </a>
+                                <span class="material-symbols-outlined  menu-arrow"> expand_more </span>
+                                <ul class="sub-menu">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
 
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined"> description </span>
-                  <p>Reports</p></a
-                ><a href="#" class="expand"
-                  ><span class="material-symbols-outlined">
-                    expand_more
-                  </span></a
-                >
-              </li>
+                               <li class="parent">
+                                <a href="#">
+                                    <span class="material-symbols-outlined"> analytics </span>
+                                    Analysis
+                                </a>
+                                <span class="material-symbols-outlined  menu-arrow"> expand_more </span>
+                                <ul class="sub-menu">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
 
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined">
-                    admin_panel_settings
-                  </span>
-                  <p>Admin</p></a
-                ><a href="#" class="expand"
-                  ><span class="material-symbols-outlined">
-                    expand_more
-                  </span></a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <a href="#" class="notifications"
-            ><span class="material-symbols-outlined"> notifications </span>
-            <p>Notifications</p></a
-          >
-          <div class="collapse">
-            <span class="material-symbols-outlined"> left_panel_close </span>
-            <p>Collapse</p>
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <div class="user">
-            <div class="avatar">JD</div>
-            <div>
-              <p class="name">John Doe</p>
-              <p class="role">Tenant</p>
-            </div>
-            <a href="#" class="expand"
-              ><span class="material-symbols-outlined"> expand_more </span></a
-            >
-          </div>
-        </div>
-      </aside>
-      <div class="container-right">
-        <main>
-          <ul class="navigation-menu">
-            <li>
-              <a href="#"
-                ><span class="material-symbols-outlined"> home </span></a
-              >
-            </li>
-            <li>
-              <span class="material-symbols-outlined navigate-next">
-                navigate_next
-              </span>
-            </li>
-            <li><a href="#">Meters</a></li>
-            <li>
-              <span class="material-symbols-outlined navigate-next">
-                navigate_next
-              </span>
-            </li>
-            <li><a href="#">Meter List</a></li>
-          </ul>
-          <h1>Meter List</h1>
-          <ul class="filter-menu">
-            <li>
-              <div class="dropdown">
-                <a href="#">
-                  Account NY Meter 1<span class="material-symbols-outlined">
-                    expand_more
-                  </span>
-                </a>
-                <div class="dropdown-content">
-                  <ul>
-                    <li>Account NY Meter 1</li>
-                    <li>Account NY Meter 2</li>
-                    <li>Account NY Meter 3</li>
-                    <li>Account NY Meter 4</li>
-                  </ul>
+                              <li class="parent">
+                                <a href="#">
+                                    <span class="material-symbols-outlined"> description </span>
+                                    Reports
+                                </a>
+                                <span class="material-symbols-outlined  menu-arrow"> expand_more </span>
+                                <ul class="sub-menu">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
+
+                                <li class="parent">
+                                <a href="#">
+                                    <span class="material-symbols-outlined"> admin_panel_settings </span>
+                                    Admin
+                                </a>
+                                <span class="material-symbols-outlined  menu-arrow"> expand_more </span>
+                                <ul class="sub-menu">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+
+                    </nav>
                 </div>
-              </div>
-            </li>
-            <li>
-              <input type="text" placeholder="Facility Name" />
-            </li>
-            <li>
-              <div class="dropdown">
-                <a href="#">
-                  AECO<span class="material-symbols-outlined">
-                    expand_more
-                  </span>
-                </a>
-                <div class="dropdown-content">
-                  <ul>
-                    <li>AECO</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                  </ul>
+                <div>
+                    <a href="#" class="notifications"><span class="material-symbols-outlined"> notifications </span>
+                        <p>Notifications</p>
+                    </a>
+                    <div class="collapse">
+                        <span class="material-symbols-outlined"> left_panel_close </span>
+                        <p>Collapse</p>
+                        <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <a href="#" class="user">
+                        <div class="avatar">JD</div>
+                        <div>
+                            <p class="name">John Doe</p>
+                            <p class="role">Tenant</p>
+                        </div>
+                        <span class="material-symbols-outlined"> expand_more </span>
+                    </a href="#">
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="filter-btns">
-                <button>Search</button>
-                <button>
-                  <span class="material-symbols-outlined"> filter_list </span
-                  >More filters
-                </button>
-              </div>
-            </li>
-          </ul>
-          <div class="table-wrapper">
-            <div class="table-navigation">
-              <div>
-                <input type="text" placeholder="Search" />
-                <button>
-                  <span class="material-symbols-outlined"> download </span
-                  >Export
-                </button>
-              </div>
-              <p>
-                Showing
-                <button>
-                  6
-                  <span class="material-symbols-outlined">
-                    expand_more
-                  </span></button
-                >of 54 results
-              </p>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th><input type="checkbox" /></th>
-                  <th><span class="material-symbols-outlined"> tag </span></th>
-                  <th>Name</th>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Date</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-cell="checkbox"><input type="checkbox" /></td>
-                  <td data-cell="hashtag">1</td>
-                  <td data-cell="name">Svetlana</td>
-                  <td data-cell="product">iMac</td>
-                  <td data-cell="price">$1599</td>
-                  <td data-cell="date">05.02.2023</td>
-                  <td data-cell="status">
-                    <span class="status-processing">Processing</span>
-                  </td>
-                </tr>
+            </aside>
+        </div>
+        <div class="main">
+            <main>
+                <ul class="navigation-menu">
+                    <li>
+                        <a href="#"><span class="material-symbols-outlined"> home </span></a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined navigate-next">
+                            navigate_next
+                        </span>
+                    </li>
+                    <li><a href="#">Meters</a></li>
+                    <li>
+                        <span class="material-symbols-outlined navigate-next">
+                            navigate_next
+                        </span>
+                    </li>
+                    <li><a href="#">Meter List</a></li>
+                </ul>
+                <h1>Meter List</h1>
+                <ul class="filter-menu">
+                    <li>
+                        <div class="dropdown">
+                            <a href="#">
+                                Account NY Meter 1<span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li>Account NY Meter 1</li>
+                                    <li>Account NY Meter 2</li>
+                                    <li>Account NY Meter 3</li>
+                                    <li>Account NY Meter 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Facility Name" />
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#">
+                                AECO<span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li>AECO</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="filter-btns">
+                            <button>Search</button>
+                            <button>
+                                <span class="material-symbols-outlined"> filter_list </span>More filters
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="table-wrapper">
+                    <div class="table-navigation">
+                        <div>
+                            <input type="text" placeholder="Search" />
+                            <button>
+                                <span class="material-symbols-outlined"> download </span>Export
+                            </button>
+                        </div>
+                        <p>
+                            Showing
+                            <button>
+                                6
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span></button>of 54 results
+                        </p>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" /></th>
+                                <th><span class="material-symbols-outlined"> tag </span></th>
+                                <th>Name</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>1</td>
+                                <td data-cell="name">Svetlana</td>
+                                <td data-cell="product">iMac</td>
+                                <td data-cell="price">$1599</td>
+                                <td data-cell="date">05.02.2023</td>
+                                <td data-cell="status">
+                                    <span class="status-processing">Processing</span>
+                                </td>
+                            </tr>
 
-                <tr>
-                  <td data-cell="checkbox"><input type="checkbox" /></td>
-                  <td data-cell="hashtag">2</td>
-                  <td data-cell="name">Daniel</td>
-                  <td data-cell="product">iPhone 14 Pro</td>
-                  <td data-cell="price">$1399</td>
-                  <td data-cell="date">23.01.2023</td>
-                  <td data-cell="status">
-                    <span class="status-completed">Completed</span>
-                  </td>
-                </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>2</td>
+                                <td data-cell="name">Daniel</td>
+                                <td data-cell="product">iPhone 14 Pro</td>
+                                <td data-cell="price">$1399</td>
+                                <td data-cell="date">23.01.2023</td>
+                                <td data-cell="status">
+                                    <span class="status-completed">Completed</span>
+                                </td>
+                            </tr>
 
-                <tr>
-                  <td data-cell="checkbox"><input type="checkbox" /></td>
-                  <td data-cell="hashtag">3</td>
-                  <td data-cell="name">Max</td>
-                  <td data-cell="product">Big Golden Carrot</td>
-                  <td data-cell="price">$99</td>
-                  <td data-cell="date">13.01.2023</td>
-                  <td data-cell="status">
-                    <span class="status-declined">Declined</span>
-                  </td>
-                </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>3</td>
+                                <td data-cell="name">Max</td>
+                                <td data-cell="product">Big Golden Carrot</td>
+                                <td data-cell="price">$99</td>
+                                <td data-cell="date">13.01.2023</td>
+                                <td data-cell="status">
+                                    <span class="status-declined">Declined</span>
+                                </td>
+                            </tr>
 
-                <tr>
-                  <td data-cell="checkbox"><input type="checkbox" /></td>
-                  <td data-cell="hashtag">1</td>
-                  <td data-cell="name">Svetlana</td>
-                  <td data-cell="product">iMac</td>
-                  <td data-cell="price">$1599</td>
-                  <td data-cell="date">05.02.2023</td>
-                  <td data-cell="status">
-                    <span class="status-processing">Processing</span>
-                  </td>
-                </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>1</td>
+                                <td data-cell="name">Svetlana</td>
+                                <td data-cell="product">iMac</td>
+                                <td data-cell="price">$1599</td>
+                                <td data-cell="date">05.02.2023</td>
+                                <td data-cell="status">
+                                    <span class="status-processing">Processing</span>
+                                </td>
+                            </tr>
 
-                <tr>
-                  <td data-cell="checkbox"><input type="checkbox" /></td>
-                  <td data-cell="hashtag">2</td>
-                  <td data-cell="name">Daniel</td>
-                  <td data-cell="product">iPhone 14 Pro</td>
-                  <td data-cell="price">$1399</td>
-                  <td data-cell="date">23.01.2023</td>
-                  <td data-cell="status">
-                    <span class="status-completed">Completed</span>
-                  </td>
-                </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>2</td>
+                                <td data-cell="name">Daniel</td>
+                                <td data-cell="product">iPhone 14 Pro</td>
+                                <td data-cell="price">$1399</td>
+                                <td data-cell="date">23.01.2023</td>
+                                <td data-cell="status">
+                                    <span class="status-completed">Completed</span>
+                                </td>
+                            </tr>
 
-                <tr>
-                  <td data-cell="checkbox"><input type="checkbox" /></td>
-                  <td data-cell="hashtag">3</td>
-                  <td data-cell="name">Max</td>
-                  <td data-cell="product">Big Golden Carrot</td>
-                  <td data-cell="price">$99</td>
-                  <td data-cell="date">13.01.2023</td>
-                  <td data-cell="status">
-                    <span class="status-declined">Declined</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pagination">
-              <ul>
-                <li>
-                  <span class="material-symbols-outlined"> arrow_back </span>
-                </li>
-                <li class="page-active">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>...</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>
-                  <span class="material-symbols-outlined"> arrow_forward </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </main>
-        <footer>
-          <img src="./images/logo-dark.svg" alt="Intelometry logo dark" />
-          <div>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy and Cookie Policy</a>
-          </div>
-          <div>
-            <p>© 2021 Intelometry Inc. All Rights Reserved (v2021)</p>
-            <p>Notice: We collect personal information on this site.</p>
-          </div>
-        </footer>
-      </div>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>3</td>
+                                <td data-cell="name">Max</td>
+                                <td data-cell="product">Big Golden Carrot</td>
+                                <td data-cell="price">$99</td>
+                                <td data-cell="date">13.01.2023</td>
+                                <td data-cell="status">
+                                    <span class="status-declined">Declined</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <ul>
+                            <li>
+                                <span class="material-symbols-outlined"> arrow_back </span>
+                            </li>
+                            <li class="page-active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>...</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>
+                                <span class="material-symbols-outlined"> arrow_forward </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="footer">
+            <footer>
+                <img src="./images/logo-dark.svg" alt="Intelometry logo dark" />
+                <div>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy and Cookie Policy</a>
+                </div>
+                <div>
+                    <p>© 2021 Intelometry Inc. All Rights Reserved (v2021)</p>
+                    <p>Notice: We collect personal information on this site.</p>
+                </div>
+            </footer>
+        </div>
     </div>
-  </body>
+    <script src="./js/index.js"></script>
+</body>
+
 </html>

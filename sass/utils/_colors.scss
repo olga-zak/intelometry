@@ -1,3 +1,25 @@
+:root {
+  --bgLight: #eceff8;
+  --bgDark: #111f2b;
+  --text: #000000;
+  --textLight: #b3b3b3;
+  --sidebarText: #ffffff;
+  --accentGreen: #1cc078;
+  --accentRed: #ff5f5e;
+  --accentBlue: #4985d6;
+}
+/////
+@function lightenMainClr($color, $percentage) {
+  @return lighten($color, $percentage);
+}
+$bgLight: #eceff8;
+$bgDark: #111f2b;
+$text: #000000;
+$textLight: lighten($text, 65%);
+$accentGreen: #1cc078;
+$accentRed: #ff5f5e;
+$accentBlue: #4985d6;
+/////
 $colors: (
   "sidebarDark": #111f2b,
   "sidebarLight": #1b2f41,
