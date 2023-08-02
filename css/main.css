@@ -132,7 +132,6 @@ aside a span:not(:last-child) {
 
 .submenu {
   width: 175px;
-  margin-top: 0.7rem;
   background-color: #1f3950;
   overflow: hidden;
   position: relative;
