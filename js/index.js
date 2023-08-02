@@ -17,8 +17,14 @@ const dropdownMenuOpenBtn = document.querySelectorAll(".dropdown");
 dropdownMenuOpenBtn.forEach((el) => {
   el.addEventListener("click", (event) => {
     event.preventDefault();
+
     const dropdownMenu =
       event.target.parentElement.querySelector(".dropdown-content");
     dropdownMenu.classList.toggle("show");
+
+    dropdownMenu.addEventListener("click", (e) => {
+      e.preventDefault();
+      dropdownMenu.classList.remove("show");
+    });
   });
 });

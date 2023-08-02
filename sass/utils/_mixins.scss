@@ -3,16 +3,16 @@
   align-items: center;
 }
 
-@mixin button($color) {
+@mixin button($color, $bgColor) {
   height: 2rem;
   padding: 0.6rem;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border-style: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 0.7rem;
-  color: #ffffff;
-  background-color: $color;
+  color: $color;
+  background-color: $bgColor;
   transition: opacity 300ms ease;
 
   &:hover,

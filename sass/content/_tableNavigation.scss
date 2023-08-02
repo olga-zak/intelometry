@@ -39,9 +39,8 @@
   }
 
   button {
-    @include button(var(--tableSecondaryBG));
+    @include button($textLight, var(--tableSecondaryBG));
     @include flex();
-    color: $textLight;
 
     span {
       margin-right: 10px;

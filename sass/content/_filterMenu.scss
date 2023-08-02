@@ -45,12 +45,12 @@
   @include flex();
 
   button {
-    @include button(var(--accentGreen));
+    @include button(var(--tableMainBG), var(--accentGreen));
     margin-right: 4px;
   }
 
   button + button {
-    @include button(var(--text));
+    @include button(var(--tableMainBG), var(--text));
     @include flex();
 
     span {
@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
   .filter-menu {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -87,7 +87,7 @@
   display: none;
   position: absolute;
   background-color: var(--tableMainBG);
-  width: 100%;
+  width: auto;
   border: 1px solid $textLight;
   border-radius: 6px;
   z-index: 1;
