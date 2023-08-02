@@ -100,15 +100,6 @@ aside {
   font-size: 1rem;
   background-image: linear-gradient(to left top, #111f2b, #132330, #162736, #182b3b, #1b2f41);
 }
-aside .navigation {
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-aside ul li {
-  position: relative;
-}
 aside img {
   margin: 0 auto 1.75rem auto;
   max-width: 8.75rem;
@@ -116,26 +107,35 @@ aside img {
 aside a {
   display: block;
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 1.3rem 1rem;
-  height: 2rem;
+  padding: 0.7rem;
   color: var(--sidebarText);
   transition: all 300ms ease;
 }
 aside a:hover, aside a:focus {
-  margin-left: 1rem;
+  color: var(--accentGreen);
 }
 aside a span:not(:last-child) {
   padding-right: 0.2rem;
 }
 
+.navigation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+@media screen and (max-width: 680px) {
+  .navigation {
+    min-height: 630px;
+  }
+}
+
 .submenu {
+  display: none;
   width: 175px;
   background-color: #1f3950;
   overflow: hidden;
-  position: relative;
-  max-height: 0;
   transition: all 300ms ease;
 }
 .submenu a {
@@ -143,12 +143,14 @@ aside a span:not(:last-child) {
   position: relative;
   white-space: nowrap;
   font-size: 0.9;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 0 0.7rem 2.5rem;
   transition: all 300ms ease;
 }
 .submenu a:hover {
-  margin: 0;
-  background-color: aquamarine;
+  padding-left: 3rem;
+}
+.submenu.open {
+  display: block;
 }
 
 .dropdown-icon {
@@ -156,17 +158,22 @@ aside a span:not(:last-child) {
   margin-top: 3px;
 }
 
-ul li:target .submenu {
-  max-height: 100%;
+.active {
+  background-color: #1a3b43;
+}
+.active::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--accentGreen);
 }
 
 .notifications {
-  display: block;
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-}
-.notifications span {
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 .notifications::before {
   content: "";
@@ -175,15 +182,9 @@ ul li:target .submenu {
   height: 4px;
   border-radius: 50%;
   position: relative;
-  top: 4px;
-  left: -6px;
+  top: 5px;
+  left: 10px;
   background-color: var(--accentGreen);
-}
-.notifications:hover, .notifications:focus {
-  margin-left: 0.5rem !important;
-}
-.notifications span {
-  margin-left: -1rem;
 }
 
 .collapse {
@@ -292,17 +293,13 @@ ul li:target .submenu {
   }
 }
 @media screen and (max-width: 680px) {
-  aside {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   aside .checkbox {
     position: absolute;
     display: block;
     height: 32px;
     width: 25px;
     top: 20px;
-    left: 1rem;
+    right: 1rem;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -313,7 +310,7 @@ ul li:target .submenu {
     height: 20px;
     width: 25px;
     top: 17px;
-    left: 1rem;
+    right: 1rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -353,8 +350,10 @@ ul li:target .submenu {
     display: none;
   }
   .navigation {
+    padding-top: 1.13rem;
+    padding-bottom: 1.5rem;
     position: absolute;
-    top: 4rem;
+    top: 0;
     left: -175px;
     width: 175px;
     min-height: 500px;
@@ -367,6 +366,21 @@ ul li:target .submenu {
     transition: all 300ms ease;
   }
 }
+.overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(255, 0, 150, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.overlay.open {
+  display: block;
+}
+
 main {
   width: 100%;
   height: 100%;

@@ -1,11 +1,5 @@
 .notifications {
-  display: block;
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-
-  span {
-    margin-right: 1rem;
-  }
+  margin-bottom: 1rem;
 
   &::before {
     content: "";
@@ -14,16 +8,8 @@
     height: 4px;
     border-radius: 50%;
     position: relative;
-    top: 4px;
-    left: -6px;
+    top: 5px;
+    left: 10px;
     background-color: var(--accentGreen);
-  }
-  &:hover,
-  &:focus {
-    margin-left: 0.5rem !important;
-  }
-
-  span {
-    margin-left: -1rem;
   }
 }
