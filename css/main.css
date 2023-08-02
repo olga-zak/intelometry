@@ -106,17 +106,19 @@ aside .navigation {
   flex-direction: column;
   justify-content: space-between;
 }
+aside ul li {
+  position: relative;
+}
 aside img {
   margin: 0 auto 1.75rem auto;
   max-width: 8.75rem;
 }
 aside a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: block;
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  padding: 0 1rem;
-  gap: 0.7rem;
+  padding: 1.3rem 1rem;
   height: 2rem;
   color: var(--sidebarText);
   transition: all 300ms ease;
@@ -124,44 +126,39 @@ aside a {
 aside a:hover, aside a:focus {
   margin-left: 1rem;
 }
-aside a div {
-  display: flex;
-  align-items: center;
+aside a span:not(:last-child) {
+  padding-right: 0.2rem;
 }
 
-.active {
-  background-color: #1a3b43;
+.submenu {
+  width: 175px;
+  margin-top: 0.7rem;
+  background-color: #1f3950;
+  overflow: hidden;
+  position: relative;
+  max-height: 0;
+  transition: all 300ms ease;
+}
+.submenu a {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  font-size: 0.9;
+  padding: 0.7rem 2rem;
+  transition: all 300ms ease;
+}
+.submenu a:hover {
+  margin: 0;
+  background-color: aquamarine;
 }
 
-aside li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.6rem;
-}
-aside .material-symbols-outlined {
-  color: var(--sidebarText);
-  cursor: pointer;
-}
-aside .menu-arrow {
-  margin-right: 1rem;
+.dropdown-icon {
+  float: right;
+  margin-top: 3px;
 }
 
-.sub-menu {
-  display: none;
-}
-.sub-menu.open {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem 1.5rem;
-  background-color: transparent;
-  width: 100%;
-  margin: 0 auto;
-  color: var(--sidebarText);
-}
-
-.parent:has(.sub-menu.open) {
-  display: flex;
-  flex-direction: column;
+ul li:target .submenu {
+  max-height: 100%;
 }
 
 .notifications {
@@ -801,4 +798,45 @@ footer p + p {
     flex-direction: column;
     gap: 1.1rem;
   }
+}
+.test-item .test-menu-bth {
+  display: block;
+  color: red;
+  position: relative;
+  padding: 25px 20px;
+  transition: all 300ms ease;
+}
+.test-item .test-menu-bth:hover {
+  margin-left: 20px;
+}
+.test-item .test-menu-bth span:not(:last-child) {
+  color: yellow;
+  padding-right: 0.1rem;
+}
+.test-item .test-submenu {
+  background-color: aqua;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 3000ms ease;
+}
+.test-item .test-submenu a {
+  display: block;
+  position: relative;
+  color: white;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 10px;
+  transition: all 300ms ease;
+}
+.test-item .test-submenu a:hover {
+  background-color: aquamarine;
+}
+
+.test-dropdown-icon {
+  float: right;
+  margin-top: 3px;
+}
+
+.test-item:target .test-submenu {
+  max-height: 100%;
 }/*# sourceMappingURL=main.css.map */
