@@ -54,10 +54,6 @@
       transition: transform 0.4s ease-in-out;
     }
 
-    input[type="checkbox"]:checked ~ .menu-items {
-      transform: translateX(0);
-    }
-
     input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
       transform: rotate(45deg);
     }
@@ -68,10 +64,6 @@
 
     input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
       transform: rotate(-45deg);
-    }
-
-    input[type="checkbox"]:checked ~ .logo {
-      display: none;
     }
   }
   .navigation {
@@ -106,7 +98,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(255, 0, 150, 0.3);
+  background-color: #{rgba($bgDark, 0.4)};
   position: fixed;
   top: 0;
   left: 0;
