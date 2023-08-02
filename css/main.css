@@ -162,18 +162,22 @@ ul li:target .submenu {
 }
 
 .notifications {
-  justify-content: flex-start;
-  margin-left: 0;
+  display: block;
+  margin-left: 1rem;
   margin-bottom: 2rem;
+}
+.notifications span {
+  margin-right: 1rem;
 }
 .notifications::before {
   content: "";
+  display: block;
   width: 4px;
   height: 4px;
   border-radius: 50%;
   position: relative;
-  bottom: 4px;
-  left: 9px;
+  top: 4px;
+  left: -6px;
   background-color: var(--accentGreen);
 }
 .notifications:hover, .notifications:focus {
@@ -798,45 +802,4 @@ footer p + p {
     flex-direction: column;
     gap: 1.1rem;
   }
-}
-.test-item .test-menu-bth {
-  display: block;
-  color: red;
-  position: relative;
-  padding: 25px 20px;
-  transition: all 300ms ease;
-}
-.test-item .test-menu-bth:hover {
-  margin-left: 20px;
-}
-.test-item .test-menu-bth span:not(:last-child) {
-  color: yellow;
-  padding-right: 0.1rem;
-}
-.test-item .test-submenu {
-  background-color: aqua;
-  overflow: hidden;
-  max-height: 0;
-  transition: all 3000ms ease;
-}
-.test-item .test-submenu a {
-  display: block;
-  position: relative;
-  color: white;
-  white-space: nowrap;
-  font-size: 15px;
-  padding: 10px;
-  transition: all 300ms ease;
-}
-.test-item .test-submenu a:hover {
-  background-color: aquamarine;
-}
-
-.test-dropdown-icon {
-  float: right;
-  margin-top: 3px;
-}
-
-.test-item:target .test-submenu {
-  max-height: 100%;
 }/*# sourceMappingURL=main.css.map */

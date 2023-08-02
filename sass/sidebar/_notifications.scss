@@ -1,16 +1,21 @@
 .notifications {
-  justify-content: flex-start;
-  margin-left: 0;
+  display: block;
+  margin-left: 1rem;
   margin-bottom: 2rem;
+
+  span {
+    margin-right: 1rem;
+  }
 
   &::before {
     content: "";
+    display: block;
     width: 4px;
     height: 4px;
     border-radius: 50%;
     position: relative;
-    bottom: 4px;
-    left: 9px;
+    top: 4px;
+    left: -6px;
     background-color: var(--accentGreen);
   }
   &:hover,
