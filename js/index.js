@@ -1,7 +1,7 @@
 // ========DROPDOWN MENU======== //
 
-const navDopdownMenu = document.querySelectorAll(".dropdown-open-btn");
-navDopdownMenu.forEach((el) => {
+const mainLink = document.querySelectorAll("#mainmenu-link");
+mainLink.forEach((el) => {
   el.addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -14,8 +14,6 @@ navDopdownMenu.forEach((el) => {
   submenuLink.forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
-      console.log("submenu link was clicked");
-      console.log(event.currentTarget.parentElement.parentElement);
       event.currentTarget.parentElement.parentElement.classList.remove("open");
     });
   });
