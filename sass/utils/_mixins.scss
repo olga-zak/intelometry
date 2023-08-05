@@ -41,3 +41,9 @@
     background-color: $textColor;
   }
 }
+
+@mixin maxWidht($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

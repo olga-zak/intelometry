@@ -95,8 +95,6 @@ img {
 }
 aside {
   height: 100%;
-  padding-top: 1.13rem;
-  padding-bottom: 1.5rem;
   font-size: 1rem;
   background-image: linear-gradient(to left top, #111f2b, #132330, #162736, #182b3b, #1b2f41);
 }
@@ -120,14 +118,26 @@ aside a span:not(:last-child) {
 
 .navigation {
   height: 100%;
+  padding-top: 1.13rem;
+  padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 2;
 }
 @media screen and (max-width: 680px) {
   .navigation {
     min-height: 630px;
+    position: absolute;
+    top: 0;
+    left: -175px;
+    width: 175px;
+    z-index: 2;
+    background-image: inherit;
+    transition: all 300ms ease;
+  }
+  .navigation.open {
+    left: 0;
+    transition: all 300ms ease;
   }
 }
 
@@ -305,6 +315,9 @@ aside a span:not(:last-child) {
     cursor: pointer;
   }
   aside .hamburger-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     display: block;
     height: 20px;
@@ -312,9 +325,6 @@ aside a span:not(:last-child) {
     top: 17px;
     right: 1rem;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   aside .hamburger-lines .line {
     display: block;
@@ -342,22 +352,6 @@ aside a span:not(:last-child) {
   }
   aside input[type=checkbox]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
-  }
-  .navigation {
-    padding-top: 1.13rem;
-    padding-bottom: 1.5rem;
-    position: absolute;
-    top: 0;
-    left: -175px;
-    width: 175px;
-    min-height: 500px;
-    z-index: 1;
-    background-image: linear-gradient(to left top, #111f2b, #132330, #162736, #182b3b, #1b2f41);
-    transition: all 300ms ease;
-  }
-  .navigation.open {
-    left: 0;
-    transition: all 300ms ease;
   }
 }
 .overlay {
