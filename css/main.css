@@ -748,7 +748,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
   border-top: 1px solid #a6a6a6;
   background-color: var(--bgLight);
   font-size: 0.56rem;
@@ -772,7 +772,7 @@ footer p + p {
   color: #a6a6a6;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 520px) {
   footer {
     flex-direction: column;
     gap: 1.1rem;

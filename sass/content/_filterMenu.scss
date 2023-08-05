@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 880px) {
+@include maxWidht(880px) {
   .filter-menu {
     display: grid;
     grid-template-columns: 50% 50%;

@@ -3,7 +3,7 @@
 footer {
   @include flex();
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
   border-top: 1px solid $textLight;
   background-color: var(--bgLight);
   font-size: 0.56rem;
@@ -30,7 +30,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@include maxWidht(520px) {
   footer {
     flex-direction: column;
     gap: 1.1rem;

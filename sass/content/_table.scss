@@ -36,14 +36,14 @@ td {
   }
 }
 
-@media screen and (max-width: 940px) {
+@include maxWidht(940px) {
   th,
   td {
     padding: 0.4rem 0.3rem;
   }
 }
 
-@media screen and (max-width: 430px) {
+@include maxWidht(430px) {
   th {
     display: none;
   }

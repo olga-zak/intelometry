@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@include maxWidht(520px) {
   .table-navigation {
     display: grid;
     grid-template-columns: 100%;
